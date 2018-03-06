@@ -1,0 +1,147 @@
+/** HEADER
+------------------------------------------------------------------------------------------------**/
+/* Place header above Row 1 */
+header{z-index:99;position:relative;}
+
+
+
+
+/** BLOG FEED GRID
+-------------------------------------------------------------------------------------------------**/
+
+/* Page Number Container */
+.fl-builder-pagination ul.page-numbers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* Page Number */
+.fl-builder-pagination li a.page-numbers, .fl-builder-pagination li span.page-numbers {
+    border-radius:15px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 0 5px;
+    
+}
+/* Page Number Current */
+.fl-builder-pagination li .current{
+    background:#f5f5f5;
+    text-decoration:noe;
+}
+
+/* Post Grid  Background and Border */
+.fl-post-grid-post {
+    background: #fff;
+    border:none;
+    visibility: hidden;
+}
+
+/* Post Grid Category */
+.fl-module-post-grid .fl-terms-list{
+    text-align:center;
+    margin:0 20px 20px 20px;
+    position:relative;
+    display:block;
+    font-size:11px;
+   
+    
+}
+/* Post Grid Categry Seperator Line */
+.fl-module-post-grid .fl-terms-list:after {
+    height: 1px; 
+    background: black;
+    content: '';
+    position: absolute;
+    top:25px;
+     width: 10%;
+    left: 45%;
+    margin-bottom:30px; 
+}
+/* Post Grid Column Gutter Fix */
+.fl-module-post-grid .fl-post-column{padding:0 30px 0 10px;}
+.fl-module-post-grid .fl-post-column:nth-child(2n + 1){padding:0 10px 0 30px}
+.fl-module-post-grid.post-1 .fl-post-column{padding:10px 30px;}
+
+
+/* Post Grid Column Mobile Fix */
+@media screen and (max-width: 992px){
+	.fl-module-post-grid.post-1 .fl-post-column { width:100%; display:block;margin:0 10px;float:none;}
+
+/* .fl-module-post-grid .fl-post-column,.fl-module-post-grid .fl-post-column:nth-child(2n + 1){padding:0px 10px; width:400px; float:none;margin:0 auto;} */
+}
+@media screen and (max-width: 768px){
+
+.fl-module-post-grid .fl-post-column { width: 400px; display:block;margin:0 auto;}
+
+.fl-module-post-grid .fl-post-column,.fl-module-post-grid .fl-post-column:nth-child(2n + 1){padding:0px 10px; width:400px; float:none;margin:0 auto;}
+
+}
+/* Post Grid Column Color Reset*/
+.fl-module-post-grid .fl-post-grid-post{background:none;}
+
+/*Post Grid Text Padding Reset */
+.fl-module-post-grid .fl-post-text{padding:20px 0;}
+
+
+/* Remove post-1 if pagination is page 2. Requires Function bb_page_class */
+body.post-1-remove .post-1{display:none;}
+
+
+/** BLOG SINGLE POST
+-------------------------------------------------------------------------------------------------**/
+/* Post Two Column Text on Larger Devices */   
+@media screen and (min-width: 768px){
+   .single .fl-post-content {
+   -webkit-column-count: 2;
+      -moz-column-count: 2;
+           column-count: 2;
+
+   -webkit-column-gap: 20px;
+      -moz-column-gap: 20px;
+           column-gap: 20px;
+}
+}
+/** SIDEBAR
+-------------------------------------------------------------------------------------------------**/
+
+/* Widget Categories Align */
+.widget_categories{
+ text-align:left;
+}
+
+/* All Widget Titles */
+.widgettitle,.widget-title h2, .fl-widget-title{
+    font-size:16px;  
+    position:relative;display:block;  
+    text-align:center;
+    margin-bottom:30px;
+}
+/* Line After All Widget Titles */
+.widgettitle:after,.widget-title h2:after,.fl-widget-title:after {
+    height: 1px; 
+    background: black;
+    content: '';
+    position: absolute;
+   
+    top:25px;
+     width: 20%;
+    left: 40%;
+    margin-bottom:30px; 
+}
+ 
+/* Widget Select Box */
+.widget select,.fl-sidebar select {
+
+   width: 240px;
+   margin:0 auto;
+   display:block;
+   height: 34px;
+   overflow: hidden;
+   background:#fff;
+   border: 1px solid #ccc;
+   }
+   
+
+}

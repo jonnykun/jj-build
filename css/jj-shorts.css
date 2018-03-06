@@ -1,0 +1,89 @@
+/* Pull Quotes CSS
+-----------------------------------------------------------------
+   - Requires JJPullQuotes Class
+*/ 
+
+
+.fl-page-content .pullquote-left{
+	float: left;
+	width: 250px;
+	margin:30px 30px 30px 0px;
+	position:relative;
+	font-size: 1.2em;
+	color: #000;
+	font-weight: bold;
+	border-radius:5px;
+	
+}
+
+.fl-page-content .pullquote-right{
+	
+	width: 250px;
+	margin:10px 0px 10px 30px ;
+	position:relative;
+	float: right;
+	font-size: 1.2em;
+	color: #000;
+	font-weight: bold;
+	border-radius:5px
+}
+
+
+.fl-page-content .pullquote-left .pullquote-hr{
+	width:20%;
+	height:2px;
+	margin-left:0;
+	border-color:#D32735;
+	background-color:#D32735;
+	color:#D32735
+}
+.fl-page-content .pullquote-right .pullquote-hr{
+	width:20%;
+	height:2px;
+	margin-left:0;
+	border-color:#D32735;
+	background-color:#D32735;
+	color:#D32735
+}
+
+
+
+.fl-page-content .block-left, .fl-page-content .block-right{
+	width:  90%;
+    background:#f7f7f7;
+    padding:30px;
+	margin:30px;
+	position:relative;
+	clear:both;
+	display:block;
+	font-size: 1.2em;
+	color: #000;
+	font-weight: bold;
+
+	
+	
+}
+
+.fl-page-content .block-left .pullquote, .fl-page-content .block-right .pullquote{
+	border-left: 2px solid #D32735;
+	display:block;
+	padding-left:20px;
+}
+
+.fl-page-content .block-left .pullquote-hr, .fl-page-content .block-right .pullquote-hr{
+	display:none;
+}
+@media (max-width: 769px){
+	.fl-page-content .pullquote-left,.fl-page-content .pullquote-right{
+		clear:both;
+		float:none;
+		width:100%;	
+	}
+	
+}
+   
+/* End PullQuotes CSS 
+----------------------------------------------------------------*/
+/* Pull Quotes CSS
+   - Requires JJPullQuotes Class
+-----------------------------------------------------------------*/ 
